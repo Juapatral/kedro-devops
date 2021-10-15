@@ -64,9 +64,9 @@ def split_data(data: pd.DataFrame, example_test_data_ratio: float) -> Dict[str, 
     test_data = data.iloc[:n_test, :].reset_index(drop=True)
 
     # Split the data to features and labels
-    train_data_x = training_data.loc[:, "sepal_length":"petal_width"]
+    train_data_x = training_data.iloc[:, "sepal_length":"petal_width"]
     train_data_y = training_data[classes]
-    test_data_x = test_data.loc[:, "sepal_length":"petal_width"]
+    test_data_x = test_data.iloc[:, "sepal_length":"petal_width"]
     test_data_y = test_data[classes]
 
     # When returning many variables, it is a good practice to give them names:

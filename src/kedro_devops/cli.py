@@ -27,7 +27,8 @@
 # limitations under the License.
 
 """Command line tools for manipulating a Kedro project.
-Intended to be invoked via `kedro`."""
+Intended to be invoked via `kedro`.
+"""
 from itertools import chain
 from pathlib import Path
 from typing import Iterable, Tuple
@@ -191,11 +192,13 @@ def lint() -> None:
     print(f"{separator}\nRunning pydocstyle...\n{separator}")
     python_call(
         "pydocstyle",
-        ["src/kedro_devops/pipelines", "src/kedro_devops/common"],
+        [
+            "src/kedro_devops/pipelines",
+        ],
     )
 
     print(f"{separator}\nRunning mypy...\n{separator}")
     python_call(
         "mypy",
-        ["src/kedro_devops/pipelines", "src/kedro_devops/common", "src/tests"],
+        ["src/kedro_devops/pipelines", "src/tests"],
     )
