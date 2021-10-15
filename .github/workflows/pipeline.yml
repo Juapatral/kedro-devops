@@ -16,6 +16,7 @@ jobs:
           pip install -r src/requirements.txt
       - name: Run linting
         run: kedro lint
+        
   test-project:
     runs-on: ubuntu-18.04
     steps:
@@ -31,7 +32,8 @@ jobs:
           pip install -r src/requirements.txt
       - name: Run testing
         run: kedro test
-build-project:
+
+  build-project:
     runs-on: ubuntu-18.04
     needs: [lint-project, test-project]
     steps:
