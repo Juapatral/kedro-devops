@@ -20,8 +20,8 @@ jobs:
     steps:
       - checkout
       - run:
-        name: Install kedro
-        command: pip install kedro==0.17.5
+          name: Install kedro
+          command: pip install kedro==0.17.5
       - run:
           name: Install Dependencies
           command: |
@@ -55,8 +55,8 @@ jobs:
       #    # This assumes pytest is installed via the install-package step above
       #    command: kedro test
       - run:
-        name: Install kedro
-        command: pip install kedro==0.17.5
+          name: Install kedro
+          command: pip install kedro==0.17.5
       - run:
           name: Install Dependencies
           command: |
