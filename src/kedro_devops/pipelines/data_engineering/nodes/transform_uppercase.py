@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 """My transform uppercase."""
 
-=======
->>>>>>> a19f18b (Dropped Circle)
 import pandas as pd
 from requests import Response
 
@@ -10,7 +7,7 @@ def transform_uppercase(data_set: Response) -> pd.DataFrame:
     """
     Transform a lowercase dataframe to uppercase.
     Args:
-        data (pd.DataFrame): A raw dataframe
+        data (pd.DataFrame): A pokeapi response
     Returns:
         pd.DataFrame: An uppercase dataframe
     """
