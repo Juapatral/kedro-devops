@@ -13,7 +13,6 @@ from kedro_devops.pipelines.data_engineering.nodes.transform_uppercase import (
 
 
 class TestTransformUppercase:
-
     """My test class."""
 
     # first test
