@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 """My transform uppercase."""
 
+=======
+>>>>>>> a19f18b (Dropped Circle)
 import pandas as pd
 from requests import Response
 
