@@ -33,8 +33,17 @@ Delete this when you start working on your own Kedro project.
 """
 
 from kedro.pipeline import Pipeline
+<<<<<<< HEAD
 from kedro.pipeline.node import Node
 from kedro_devops.pipelines.data_engineering.nodes.transform_uppercase import transform_uppercase
+=======
+
+from kedro.pipeline.node import Node
+from kedro_devops.pipelines.data_engineering.nodes.transform_uppercase import (
+    transform_uppercase,
+)
+
+>>>>>>> 7d701c9f3476f18f41887485e3c014b282a61cea
 
 
 def create_pipeline(**kwargs) -> Pipeline:
