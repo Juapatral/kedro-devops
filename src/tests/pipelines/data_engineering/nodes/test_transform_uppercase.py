@@ -8,10 +8,10 @@ from kedro_devops.pipelines.data_engineering.nodes.transform_uppercase import (
 
 
 class TestTransformUppercase:
+    """Testtransform Docstring."""
+
     def test_transform_string(self, monkeypatch: MonkeyPatch):
-        """
-        should return a upper case string for a string dataframe
-        """
+        """Return a upper case string for a string dataframe."""
 
         def mock_json():
             return {
