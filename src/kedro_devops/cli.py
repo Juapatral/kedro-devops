@@ -192,13 +192,7 @@ def lint() -> None:
     print(f"{separator}\nRunning pydocstyle...\n{separator}")
     python_call(
         "pydocstyle",
-<<<<<<< HEAD
-        [
-            "src/kedro_devops/pipelines",
-        ],
-=======
         ["src/kedro_devops/pipelines"],
->>>>>>> upstream/main
     )
 
     print(f"{separator}\nRunning mypy...\n{separator}")
