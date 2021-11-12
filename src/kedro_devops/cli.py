@@ -27,7 +27,8 @@
 # limitations under the License.
 
 """Command line tools for manipulating a Kedro project.
-Intended to be invoked via `kedro`."""
+Intended to be invoked via `kedro`.
+"""
 from itertools import chain
 from pathlib import Path
 from typing import Iterable, Tuple
