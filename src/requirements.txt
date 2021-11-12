@@ -177,13 +177,23 @@ jupyterlab-widgets==1.0.2
 jupyterlab==3.1.18
     # via -r C:\Users\jptru\OneDrive\Documentos\SUMZ\courses\kedro-devops\src\requirements.in
 kedro-airflow==0.4.1
+<<<<<<< HEAD
     # via -r C:\Users\jptru\OneDrive\Documentos\SUMZ\courses\kedro-devops\src\requirements.in
 kedro-telemetry==0.1.2
     # via -r C:\Users\jptru\OneDrive\Documentos\SUMZ\courses\kedro-devops\src\requirements.in
 kedro[pandas.csvdataset]==0.17.5
+=======
+    # via -r C:\Users\juanm\Documents\Sumz\kedro-devops\src\requirements.in
+kedro-docker==0.2.2
+    # via -r C:\Users\juanm\Documents\Sumz\kedro-devops\src\requirements.in
+kedro-telemetry==0.1.2
+    # via -r C:\Users\juanm\Documents\Sumz\kedro-devops\src\requirements.in
+kedro[pandas.parquetdataset]==0.17.5
+>>>>>>> upstream/main
     # via
     #   -r C:\Users\jptru\OneDrive\Documentos\SUMZ\courses\kedro-devops\src\requirements.in
     #   kedro-airflow
+    #   kedro-docker
     #   kedro-telemetry
 markupsafe==2.0.1
     # via jinja2
@@ -228,13 +238,17 @@ notebook==6.4.4
     #   nbclassic
     #   widgetsnbextension
 numpy==1.21.2
-    # via pandas
+    # via
+    #   pandas
+    #   pyarrow
 packaging==21.0
     # via
     #   bleach
     #   jupyterlab
     #   jupyterlab-server
     #   pytest
+pandas-stubs==1.2.0.29
+    # via -r C:\Users\juanm\Documents\Sumz\kedro-devops\src\requirements.in
 pandas==1.3.3
     # via kedro
 pandocfilters==1.5.0
@@ -263,6 +277,8 @@ prompt-toolkit==3.0.20
     #   jupyter-console
 py==1.10.0
     # via pytest
+pyarrow==3.0.0
+    # via kedro
 pycodestyle==2.7.0
     # via flake8
 pycparser==2.20
@@ -337,7 +353,9 @@ requests==2.25.1
 rope==0.19.0
     # via kedro
 semver==2.13.0
-    # via kedro-airflow
+    # via
+    #   kedro-airflow
+    #   kedro-docker
 send2trash==1.8.0
     # via
     #   jupyter-server
@@ -396,6 +414,16 @@ typed-ast==1.4.3
     # via
     #   black
     #   mypy
+types-atomicwrites==1.4.1
+    # via -r C:\Users\juanm\Documents\Sumz\kedro-devops\src\requirements.in
+types-cachetools==4.2.4
+    # via -r C:\Users\juanm\Documents\Sumz\kedro-devops\src\requirements.in
+types-requests==2.25.11
+    # via -r C:\Users\juanm\Documents\Sumz\kedro-devops\src\requirements.in
+types-setuptools==57.4.2
+    # via -r C:\Users\juanm\Documents\Sumz\kedro-devops\src\requirements.in
+types-toml==0.10.1
+    # via -r C:\Users\juanm\Documents\Sumz\kedro-devops\src\requirements.in
 typing-extensions==3.10.0.2
     # via
     #   anyio
@@ -404,6 +432,7 @@ typing-extensions==3.10.0.2
     #   gitpython
     #   importlib-metadata
     #   mypy
+    #   pandas-stubs
 urllib3==1.26.7
     # via
     #   requests
