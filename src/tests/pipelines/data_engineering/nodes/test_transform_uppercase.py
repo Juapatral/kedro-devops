@@ -1,6 +1,8 @@
 """My test transform uppercase."""
 
 import pandas as pd
+from pytest import MonkeyPatch
+from requests.models import Response
 
 from requests.models import Response
 from pytest import MonkeyPatch
@@ -22,9 +24,7 @@ class TestTransformUppercase:
                 "results": [{"data": "test1"}, {"data": "test2"}, {"data": "test3"}]
             }
 
-        t_dataframe = Response()
-        monkeypatch.setattr(t_dataframe, "json", mock_json)
-
-        output = transform_uppercase(t_dataframe)
-
+        response = Response()
+        monkeypatch.setattr(response, "json", mock_json)
+        output = transform_uppercase(response)
         assert output.equals(pd.DataFrame({"data": ["TEST1", "TEST2", "TEST3"]}))
